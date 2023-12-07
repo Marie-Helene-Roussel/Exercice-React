@@ -1,13 +1,29 @@
 <!DOCTYPE html>
-<html>
- <head>
-    <meta charset="utf-8"/>
-    <title>Exercice de React</title>
- </head>
+<html lang="fr">
 
- <body>
-    <h1> Bonjour 🦦 </h1>
- </body>
+<head>
+    <title>exercice</title>
+    <meta charset="UTF-8">
+
+</head>
+
+<body>
+    <div id="root"> Bonjour </div>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        function myComponent() {
+            return <div>
+                Bonjour les potichats
+                </div>
+        }
+
+        ReactDOM.render(<myComponent />, document.getElementById('root')) </script>
+
+
+
+</body>
 
 
 
